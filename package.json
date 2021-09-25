@@ -1,0 +1,17 @@
+{
+  "name": "astrophel-cli",
+  "version": "0.0.1-alpha.3",
+  "description": "Astrophel Js CLI",
+  "bin": {
+    "astrophel": "./bin/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "preferGlobal": true,
+  "dependencies": {
+    "colors": "^1.4.0",
+    "commander": "^8.1.0",
+    "inquirer": "^8.1.2"
+  }
+}
