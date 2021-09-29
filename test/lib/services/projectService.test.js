@@ -19,25 +19,3 @@ test('should do a partial mock', () => {
     expect(runProjectResult).toBe('mocked baz');
     expect(runProject).toHaveBeenCalled();
 });
-
-let path = require('path');
-let exec = require('child_process').exec;
-
-test('Code should be 0 if can run start', async() => {
-    let result = await cli(['start'], '.');
-    expect(result.code).toBe(0)
-})
-
-function cli(args, cwd) {
-    return new Promise(resolve => {
-        exec(`node ${path.resolve('bin/index.js')} ${args.join(' ')}`, { cwd },
-            (error, stdout, stderr) => {
-                resolve({
-                    code: error && error.code ? error.code : 0,
-                    error,
-                    stdout,
-                    stderr
-                })
-            })
-    })
-}
