@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 require('node-absolute-path');
+
 const program = require('commander');
 const { createNewProject, runProject } = include('lib/services/projectService');
 

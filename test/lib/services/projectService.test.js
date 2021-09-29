@@ -1,4 +1,3 @@
-require('node-absolute-path');
 const { createNewProject, runProject } = require('@astrophel-cli/lib/services/projectService');
 
 jest.mock('@astrophel-cli/lib/services/projectService', () => {

@@ -1,5 +1,4 @@
-require('node-absolute-path');
-const { stringUtils } = include('lib/utils');
+const { stringUtils } = require('@astrophel-cli/lib/utils');
 
 test('check string contains space', () => {
     let stringTest = "new project"

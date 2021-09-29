@@ -1,5 +1,4 @@
-require('node-absolute-path');
-const question = include('lib/fixtures/question');
+const question = require('@astrophel-cli/lib/fixtures/question');
 
 test('validate project name contains space and symbol', () => {
     let stringTest = "new project?"
