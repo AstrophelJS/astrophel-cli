@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-const program = require('commander');
+require('node-absolute-path');
 
-const { createNewProject, runProject } = require('../lib/services/projectService');
+const program = require('commander');
+const { createNewProject, runProject } = include('lib/services/projectService');
 
 program
     .command('create')
