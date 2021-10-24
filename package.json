@@ -10,6 +10,7 @@
     "license": "MIT",
     "preferGlobal": true,
     "dependencies": {
+        "chokidar": "^3.5.2",
         "colors": "^1.4.0",
         "commander": "^8.1.0",
         "inquirer": "^8.1.2",
