@@ -3,21 +3,14 @@
 require('node-absolute-path');
 
 const program = require('commander');
-const { createNewProject, runProject } = include('lib/services/projectService');
+const { generateNewProject } = include('lib/services/projectService');
 
 program
-    .command('create')
-    .option('-n, --name <project-name>', 'Name of the project', 'astrophel-project')
-    .description('Create new astrophel project')
+    .command('generate')
+    .option('-n, --name <project-name>', 'Name of the project', 'btpn-project')
+    .description('Generate new project')
     .action((options) => {
-        createNewProject(options);
-    });
-
-program
-    .command('start')
-    .description('Run astrophel project')
-    .action((options) => {
-        runProject(options);
+        generateNewProject(options);
     });
 
 program.parse(process.argv);

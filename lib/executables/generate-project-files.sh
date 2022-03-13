@@ -1,10 +1,9 @@
 installedModulePath=$(npm root -g)/astrophel-cli
-starterProjectPath=$installedModulePath/lib/starters/$starterType/
-
-mkdir $projectName
-cd $projectName
+projectName=$1
 initiatedProjectPath=`pwd`
 
-echo Copying starter project ...
-cp -r $starterProjectPath $initiatedProjectPath
+mkdir $projectName && cd $projectName
+git clone https://github.com/AstrophelJS/astrophel-project.git .
+
+echo Cloning starter project ...
 echo ${projectName} has been created successfully

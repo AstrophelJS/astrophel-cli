@@ -1,3 +1,0 @@
-initiatedProjectPath=`pwd`
-
-echo Running the project ...
