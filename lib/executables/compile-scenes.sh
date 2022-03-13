@@ -9,4 +9,6 @@ node $astrophelCLIPath/node_modules/hygen/dist/bin.js scenes-compiler scenes --i
 echo Project successfully compiled
 echo Starting the App
 
-node $astrophelCLIPath/node_modules/react-scripts/bin/react-scripts.js start
+cd $astrophelCLIPath/compiled/$projectName
+npm install
+node $astrophelCLIPath/compiled/$projectName/node_modules/react-scripts/bin/react-scripts.js start

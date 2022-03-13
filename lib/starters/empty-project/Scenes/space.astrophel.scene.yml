@@ -1,0 +1,5 @@
+name: space
+mode: 3d
+skyImageUrl: Assets/astrophel-title.png
+skyImageRotateTo: 360
+skyImageRotateDuration: 10000

@@ -15,6 +15,7 @@ program
 
 program
     .command('start')
+    .option('-n, --name <project-name>', 'Name of the project', 'astrophel-project')
     .description('Run astrophel project')
     .action((options) => {
         runProject(options);

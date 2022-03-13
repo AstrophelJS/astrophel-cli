@@ -7,6 +7,3 @@ cd $astrophelCLIPath/lib
 node $astrophelCLIPath/node_modules/hygen/dist/bin.js scenes-compiler scenes --initiatedProjectPath=$initiatedProjectPath --compiledProjectPath=$astrophelCLIPath/compiled "${payload[@]//\%20/ }"
 
 echo Project successfully compiled
-echo Starting the App
-
-node $astrophelCLIPath/node_modules/react-scripts/bin/react-scripts.js start
